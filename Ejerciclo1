@@ -1,0 +1,19 @@
+import java.util.*;
+public class Ejerciclo1{
+  public static void main(String[] args){
+  int num, cont=1;
+  Scanner sc = new Scanner(System.in);
+  System.out.println("Introduzca un numero: ");
+  num = sc.nextInt();
+  while (num != 0){    
+        if ( num > 0 )
+          System.out.println("Es positivo ");
+        else
+          System.out.println("Es negativo ");
+          System.out.println("Introduzca un numero: ");
+        num = sc.nextInt(); 
+        cont++; 
+      }
+    System.out.print("Haz introducido un 0 e ingreso un numero " + cont +" veces"); 
+    }
+}
