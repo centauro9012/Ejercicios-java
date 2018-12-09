@@ -1,0 +1,25 @@
+import java.io.*;
+public class Factorial {
+  public static void main ( String args[]) throws IOException{
+ 
+ BufferedReader br = new BufferedReader
+ (new InputStreamReader (System.in));
+ 
+ System.out.println("Escriba un numero: ");
+ int n = Integer.parseInt(br.readLine());
+ while (n< 0){
+   System.out.println("Error!! El numero no es positivo");
+   System.out.println("Escriba un numero:");
+   n = Integer.parseInt(br.readLine());
+   
+   
+     }//while
+     int factorial = 1;
+     for (int i = 1; i<=n ;i++){
+         factorial = factorial *i;  //factorial*=i;
+         
+     } //for
+      System.out.println("Factorial de "+n +": "+factorial);
+ 
+   }//main
+ }//class
