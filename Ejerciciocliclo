@@ -1,0 +1,21 @@
+import java.util.*;
+public class Ejerciciocliclo{
+  public static void main(String[] args){
+  double num;
+  Scanner sc = new Scanner(System.in);
+  System.out.print("Introduzca un numero: ");
+  num = sc.nextDouble();
+  if ( num >0 ){
+          System.out.print("Es positivo ");
+          }
+  if (num < 0 ){  
+          System.out.print("Es negativo ");
+          }
+  while (num == 0)
+          System.out.print("Introduzca un numero: ")
+            num = sc.nextInt();
+           
+  System.out.println("La suma es: " + suma);  
+ 
+ }
+}
