@@ -1,0 +1,28 @@
+import java.io.*;
+public class Arreglos2_CicloDowhile{
+ public static void main (String args[] ) throws IOException{
+  BufferedReader br = new BufferedReader (new InputStreamReader (System.in));
+ int x=0,y=0,cont=0;
+ double calificaciones[];
+ double suma=0,media;
+ 
+ calificaciones = new double [10];
+ 
+  do {
+     System.out.println("Ingrese la calificacion [] ("+x+"): ");
+     calificaciones [x] = Double.parseDouble(br.readLine());
+     suma = suma + calificaciones [x];
+     cont++;
+     x++;
+     }while (x <calificaciones.length );
+     
+ do  { 
+     System.out.println("La calificacion es ["+y+"]: "+calificaciones [y]);
+     y++;
+     }  while (y <calificaciones.length );
+       media = suma/calificaciones.length;
+       System.out.print("El promedio es igual a: "+media);
+  
+  }
+}
+  
