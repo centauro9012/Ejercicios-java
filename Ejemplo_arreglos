@@ -1,0 +1,26 @@
+import java.io.*;
+public class Ejemplo_arreglos{
+  public static void main( String args[])  throws IOException{
+  
+  BufferedReader br = new BufferedReader
+  (new InputStreamReader (System.in));
+  
+  // declaraciones de tipo entero
+  int calificaciones[];
+  //instanciar el arreglo
+  calificaciones = new int [10]; 
+  /*int calificaciones [] = int[30]
+  */
+  for (int x =0; x<calificaciones.length;x++  )// length es para tamaño del arreglo
+  {
+  System.out.println ("Ingrese la calificiacion ["+x+"]: ");
+  calificaciones[x] = Integer.parseInt (br.readLine());
+    }
+    {
+    for (int y =0; y<calificaciones.length;y++)
+    {
+    System.out.println ("La calificiacion obtenida ["+y+"]: "  +calificaciones[y]);
+    }
+    }//tarea hacerlo con while y do while y sacar el promedio
+  }
+}
